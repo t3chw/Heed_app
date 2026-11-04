@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Heed</string>
+
+    <!-- Widget -->
+    <string name="widget_description">Quick record with Heed</string>
+
+    <!-- Screen text lives in the Compose code; the other strings that were here (from the first Bol screens)
+         were not used anywhere. Heed is English-only for now, so there is no translated values-* folder. -->
+</resources>

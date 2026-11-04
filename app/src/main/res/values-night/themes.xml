@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark version of Theme.Bol (values/themes.xml): the same items on a dark parent, so platform UI that doesn't
+         go through Compose (system dialogs, the translucent Share and Quick Capture windows) follows dark mode too.
+         Theme.Bol.Transparent and Theme.Bol.QuickCapture inherit from it. -->
+    <style name="Theme.Bol" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/window_bg</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/window_bg</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/splash_logo</item>
+    </style>
+</resources>

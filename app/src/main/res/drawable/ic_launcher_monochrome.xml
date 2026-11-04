@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Heed monochrome launcher icon for Android 13+ "themed icons". The
+  OS uses this as a mask and tints it with the user's system wallpaper
+  color, so every shape needs to be solid black on transparent. We
+  strip face details (eyes / smile) and the pot at this size — the
+  bulb + sprig silhouette is what users will recognize when their
+  themed icon palette is monotone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Bulb silhouette -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M30,56 a24,25 0 1,0 48,0 a24,25 0 1,0 -48,0 Z" />
+
+    <!-- Sprig stem -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M52,32 L56,32 L56,22 L52,22 Z" />
+
+    <!-- Sprig leaf -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M54,22 Q64,18 64,12 Q58,8 54,14 Q52,18 54,22 Z" />
+
+</vector>

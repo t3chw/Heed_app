@@ -1,0 +1,28 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+# Personal tool settings and media that stay off GitHub
+/.claude/
+/app_screenshort/
+/demo_videos/
+/CONTEXT.md
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.dual-graph/
+.bol.db
+.bol.db-wal
+.bol.db-shm
+
+# On-device models are bundled locally and never committed
+app/src/main/assets/models/
+/task_model/src/main/assets/models/
+/speech_model/src/main/assets/models/
+/search_model/src/main/assets/models/
+/task_model/build/
+/speech_model/build/
+/search_model/build/

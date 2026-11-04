@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Auto-backup rules for API ≤ 30 (legacy `fullBackupContent` format).
+  On API 31+ this file is ignored in favor of `data_extraction_rules.xml`.
+
+  Bol's privacy stance is "100% on-device", so we deliberately back up
+  ONLY the user's app preferences (theme, STT engine choice, default
+  reminder hour, LLM sampler params). The Room database — which holds
+  every transcribed voice memo, item, and search query — and all raw
+  audio WAVs are excluded so they never leave the device.
+
+  Specifying any <include> switches Android off the implicit "back up
+  everything ≤ 25 MB" default, so the omitted paths (audio, models,
+  database, performance logs) are excluded automatically.
+-->
+<full-backup-content>
+    <!-- DataStore preferences live in /data/data/com.bol.app/files/datastore/. -->
+    <include domain="file" path="datastore/" />
+</full-backup-content>

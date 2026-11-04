@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The few theme tokens that have to exist outside Compose: the cold-start window, the home-screen widget
+         (Glance can't read the Compose theme) and the notification accent. Same values as LightHeedColors in
+         ui/theme/Color.kt; values-night holds the dark ones. Keep the two in step. -->
+    <color name="window_bg">#FFFFFF</color>
+    <color name="heed_surface">#FFFFFF</color>
+    <color name="heed_line">#E9E9E7</color>
+    <color name="heed_text_primary">#191919</color>
+    <color name="heed_brand">#2F8A4C</color>
+    <color name="heed_on_brand">#FFFFFF</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Backup / transfer rules for API 31+ (Android 12+).
+
+  Bol's privacy stance is "100% on-device": voice memos, transcribed text,
+  search history, and items must never leave the device. We back up ONLY
+  app preferences so a user moving to a new phone keeps their theme and
+  STT-engine choice — but their content stays behind on the old device.
+
+  Specifying any <include> switches off Android's implicit "back up
+  everything ≤ 25 MB" behavior, so the omitted paths (audio, models,
+  Room database, performance logs) are excluded automatically.
+
+  - cloud-backup: data uploaded to the user's Google Drive (encrypted).
+  - device-transfer: data copied locally during phone-to-phone setup
+    (e.g. Smart Switch). Same scope as cloud — user content stays
+    on the original device.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- DataStore preferences only — see file path
+             /data/data/com.bol.app/files/datastore/. -->
+        <include domain="file" path="datastore/" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="file" path="datastore/" />
+    </device-transfer>
+</data-extraction-rules>

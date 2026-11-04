@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Notification small icon — Bol's bulb + sprig silhouette.
+
+  Status-bar notification icons must be a single-color silhouette
+  (Android tints them based on the system theme). The previous setup
+  used `R.mipmap.ic_launcher` which Android renders as a flat blob in
+  the status bar — readable but generic. Using this purpose-built
+  silhouette gives reminders / digest / download notifications the
+  Bol mark instead.
+
+  Format:
+    - 24dp viewport (Android's notification-icon convention)
+    - Solid white fill (the system applies its own tint)
+    - No outlines (would render as black on tinted background)
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Bulb silhouette — centered ellipse -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M5,14 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 Z" />
+
+    <!-- Sprig stem -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M11,8 L13,8 L13,4 L11,4 Z" />
+
+    <!-- Sprig leaf -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,5 Q15.5,3.5 16,1.5 Q13.5,0.5 11.5,2.5 Q11,4 12,5 Z" />
+
+</vector>

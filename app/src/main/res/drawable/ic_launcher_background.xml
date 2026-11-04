@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Solid white background for the adaptive icon, behind the sprout's
+  face in the foreground layer. Android requires an opaque background
+  layer; the launcher also shows it during the parallax animation when
+  the user long-presses the icon.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0 H108 V108 H0 Z" />
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Heed launcher icon foreground: the sprout's face (432x432 raster in
+  drawable-nodpi, transparent around it, the art inside the 66dp safe
+  circle). The OS scales it to the 108dp adaptive viewport over the
+  white background layer and applies the launcher's shape mask. The
+  Play Store icon (512, same art on white) matches it.
+-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/ic_launcher_image"
+    android:gravity="fill" />

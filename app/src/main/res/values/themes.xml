@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Bol" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Cold-start window background — keeps the moment between
+             splash dismissal and Compose drawing the same colour as
+             the home screen. -->
+        <item name="android:windowBackground">@color/window_bg</item>
+        <!-- Android 12+ system splash. The OS forces a splash on every
+             cold start; we make it visually invisible by giving it a
+             transparent icon and a background that matches the app. -->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/window_bg</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@drawable/splash_logo</item>
+    </style>
+
+    <!-- Used by ShareReceiveActivity: fully translucent so the bottom sheet looks
+         like it's overlaying whatever app the user shared from. -->
+    <style name="Theme.Bol.Transparent" parent="Theme.Bol">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- Used by QuickCaptureActivity: same translucent base as Share, plus
+         no in/out animation so summoning Bol feels instant. The Compose
+         scrim inside the activity provides the dimming visual itself. -->
+    <style name="Theme.Bol.QuickCapture" parent="Theme.Bol">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Tells Android we're a Digital Assistant candidate. Empty assist root
+  is the minimum needed to declare the app for the assistant picker;
+  no extra attributes (assistStructure / assistScreenshot are optional
+  and not in stock Android attrs). The system reads this in conjunction
+  with the ASSIST intent filter on QuickCaptureActivity.
+-->
+<assist />

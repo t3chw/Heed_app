@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark versions of values/colors.xml; the same values as DarkHeedColors in ui/theme/Color.kt. -->
+    <color name="window_bg">#191919</color>
+    <color name="heed_surface">#202020</color>
+    <color name="heed_line">#2F2F2F</color>
+    <color name="heed_text_primary">#EDEDEC</color>
+    <color name="heed_brand">#4CAF6E</color>
+    <color name="heed_on_brand">#0F1A12</color>
+</resources>
